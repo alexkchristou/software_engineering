@@ -102,7 +102,7 @@ Would you like to:
 cart = dict()
 done = False
 
-while done == False:
+while done is False:
     show_cart(cart)
     menu_choice = menu()
     if menu_choice == '1':
