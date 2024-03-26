@@ -97,10 +97,27 @@ Would you like to:
     menu_choice = (input())
     return menu_choice
 
+# This function holds a predefined list of items
+def prelisted_items():
+    prelist = dict()
+    prelist = {'apples':1,'eggs':5,'milk':2}
+    return prelist
+
+# This function prints on the screen the predefined list of items
+def show_prelisted():
+    prelist = prelisted_items()
+    print(40*'-')
+    print("Here are some prelisted items:")
+    for i in prelist.keys():
+        print(i,':',prelist[i],'$')
+    return
 
 # ========================= START OF PROGRAM ========================= #
 cart = dict()
 done = False
+
+# For the first run I will show a prelist of items to help the user
+show_prelisted()
 
 while done is False:
     show_cart(cart)
