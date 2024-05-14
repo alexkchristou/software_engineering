@@ -2,6 +2,9 @@
 
 # import libraries#
 import pandas as pd
+import matplotlib as mlt
+import numpy as np
+import seaborn as sns
 
 # start of program
 
@@ -14,4 +17,4 @@ print(df.describe())
 #drop the label column
 df1 = df.drop('FloodProbability',axis = 1)
 print (df1.head())
-# print (df1.info())
+print (df1.info())
