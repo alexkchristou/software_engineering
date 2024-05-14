@@ -9,8 +9,9 @@ df = pd.read_csv("train.csv")
 print(df.columns)
 print(df['PoliticalFactors'].min()) #ranges 0 to 16
 print(df.info())
+print(df.describe())
 
 #drop the label column
 df1 = df.drop('FloodProbability',axis = 1)
 print (df1.head())
-print (df1.info())
+# print (df1.info())
